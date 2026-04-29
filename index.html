@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños Amor!</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --rosa-suave: #fce4ec;
+            --rosa-fuerte: #d81b60;
+            --amarillo-pastel: #fff9c4;
+            --texto: #4a4a4a;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--texto);
+            background: linear-gradient(135deg, #fff5f7 0%, #fff9e6 100%);
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: white;
+            border-bottom: 5px solid var(--rosa-suave);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--rosa-fuerte);
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .audio-section {
+            text-align: center;
+            background: #fffdf0;
+            padding: 20px;
+            border-bottom: 1px solid var(--rosa-suave);
+        }
+
+        .audio-section p {
+            margin: 0 0 10px 0;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: var(--rosa-fuerte);
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .carta {
+            background: white;
+            padding: 45px;
+            border-radius: 20px;
+            box-shadow: 15px 15px 40px rgba(0,0,0,0.05);
+            line-height: 1.8;
+            border-top: 6px solid var(--amarillo-pastel);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .audio-personal {
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 50px;
+            box-shadow: 0 10px 25px rgba(216, 27, 96, 0.1);
+            max-width: 500px;
+            text-align: center;
+            border: 2px dashed var(--rosa-suave);
+        }
+
+        .audio-personal h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--rosa-fuerte);
+            margin-top: 0;
+        }
+
+        /* DISEÑO DE GALERÍA DE 6 FOTOS */
+        .grid-fotos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .foto-item {
+            background: white;
+            padding: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            transform: rotate(-1.5deg);
+        }
+
+        .foto-item:nth-child(even) { transform: rotate(1.5deg); }
+        .foto-item:nth-child(3n) { transform: rotate(-1deg); }
+
+        .foto-item:hover {
+            transform: rotate(0deg) scale(1.05);
+            z-index: 5;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .foto-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            margin-top: 80px;
+            border-top: 1px solid var(--rosa-suave);
+        }
+
+        audio {
+            height: 35px;
+            filter: sepia(100%) saturate(200%) hue-rotate(290deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="audio-section">
+        <p>NUNCA OLVIDES LO MUCHO QUE TE AMO</p>
+        <audio controls loop>
+            <source src="cancion.mp3.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <header>
+        <h1>¡Feliz Cumpleaños!</h1>
+        <p style="font-weight: 300;">Eres la luz de mis días. Te amo con todas mis fuerzas.</p>
+    </header>
+
+    <div class="container">
+        <section class="carta">
+            <h2>Mi regalo para ti...</h2>
+            <p>
+                Hola mi amor, quería hacerte algo diferente para este cumpleaños. 
+                Esta página está hecha con amor para guardar nuestros recuerdos.
+            </p>
+            
+            <div class="audio-personal">
+                <h3>A veces solo leer la carta no es suficiente ❤️</h3>
+                <p style="font-size: 0.9rem; margin-bottom: 15px;">(Un mensaje especial que grabé para ti)</p>
+                <audio controls>
+                    <source src="mi_voz.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <p>¡Espero que te guste tanto como a mí me gustó hacerla! Te mereces el mundo entero y más.</p>
+        </section>
+
+        <h2 style="text-align: center; font-family: 'Playfair Display'; font-size: 2.8rem; margin-bottom: 10px;">Nuestros Recuerdos</h2>
+        <p style="text-align: center; margin-bottom: 40px; font-style: italic;">Cada momento a tu lado es mi favorito</p>
+
+        <div class="grid-fotos">
+            <div class="foto-item"><img src="fto1.jpeg" alt="Foto 1"></div>
+            <div class="foto-item"><img src="fto2.jpeg" alt="Foto 2"></div>
+            <div class="foto-item"><img src="fto3.jpeg" alt="Foto 3"></div>
+            <div class="foto-item"><img src="fto4.jpeg" alt="Foto 4"></div>
+            <div class="foto-item"><img src="fto5.jpeg" alt="Foto 5"></div>
+            <div class="foto-item"><img src="fto6.jpeg" alt="Foto 6"></div>
+        </div>
+    </div>
+
+    <footer>
+        Hecho con todo mi amor. ❤️
+    </footer>
+
+</body>
+</html>
